@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables & Data Types</title>
+  </head>
+  <body>
+    <script>
+      //Variables — “Boxes that store data”
+      /*let name = "Rohan";
+      const age = 25;
+      const country = "India";*/
+
+      //Data Types — “The kind of thing inside the box”
+      //string, number, boolean, null, undefined, symbol, bigint
+
+      //Exercise1: Primitive Data Types
+      let name = "Rohan";
+      let age = 25;
+      let isMarried = false;
+      let height = 5.9;
+      let profession = null;
+      let country; //undefined
+
+      console.log(
+        typeof name,
+        typeof age,
+        typeof isMarried,
+        typeof height,
+        typeof profession,
+        typeof country
+      );
+
+      //Exercise 2: Reference Types
+      let person = { name: "Rohan", age: 27 };
+      let hobbies = ["coding", "travelling", "fitness"];
+
+      console.log(typeof person, typeof hobbies);
+      console.log(Array.isArray(person));
+      console.log(Array.isArray(hobbies));
+
+      //Exercise 3: Copy by Value vs Copy by Reference
+      //Copy by value (Primitives)
+      let a = 10;
+      let b = a;
+      b = 20;
+      console.log(a, b);
+
+      // Copy by reference (Objects)
+      let obj1 = { value: 10 };
+      let obj2 = obj1;
+      obj2.value = 20;
+      console.log(obj1.value, obj2.value);
+
+      /* 
+      🧩 Reflect:
+        Why does changing b not affect a?
+        But changing obj2.value affects obj1.value?
+        That’s because primitives store the value, while objects store the memory address.
+        so Primitives are like a Toy, while Objects are like Mystery Box
+      */
+    </script>
+  </body>
+</html>
