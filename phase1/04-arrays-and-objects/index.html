@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays & Objects</title>
+  </head>
+  <body>
+    <script>
+      // //Arrays
+      // // Map
+      // let numbers = [1, 2, 3];
+      // let doubled = numbers.map((number) => number * 2);
+      // console.log(doubled);
+
+      // // filter()
+      // let prices = [1200, 800, 1500, 600];
+      // let expensive = prices.filter((prices) => prices > 1000);
+      // console.log(expensive);
+
+      // // reduce()
+      // let bills = [1000, 1200, 800];
+      // let total = bills.reduce((bill, b) => bill + b, 0);
+      // console.log(total);
+
+      // //Objects
+      // let guest = {
+      //   name: 'Rohan',
+      //   age: 27,
+      //   isVIP: true,
+      //   room: 203,
+      // };
+
+      // //   Objects + Arrays = Real-World Data
+      // let bookings = [
+      //   { name: 'Rohan', room: 101, nights: 2 },
+      //   { name: 'Amit', room: 102, nights: 2 },
+      // ];
+      // bookings.forEach((b) => console.log(`${b.name} booking room ${b.room}`));
+
+      //   Exercise 1 - Guest List Basics
+      // guests = ['Rohan', 'Amit', 'Sachin', 'Shinchan', 'Nohara'];
+      // // guests.push('Doraemon');
+      // guests.shift();
+      // console.log(guests);
+      // console.log(guests.length);
+
+      // //Exercise 2 - Room Number
+      // let room = [101, 102, 103, 104, 105];
+      // for (let number of room) {
+      //   console.log('Cleaning Room', number);
+      //   number++;
+      // }
+
+      // //Exercise 3: Discount Filter
+      // let prices = [1200, 800, 1800, 900, 2200];
+      // let newPrice = prices.filter((prices) => prices > 1000);
+      // console.log(newPrice);
+
+      //Exercise 4: Room Rate Doubler
+      let rates = [1000, 1200, 1500];
+      let double = rates.map((n) => n * 2);
+      console.log(double);
+    </script>
+  </body>
+</html>
