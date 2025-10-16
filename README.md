@@ -10,7 +10,7 @@ I’m focusing on the 20% concepts that give 80–100% real-world understanding,
 | --- | ---------------------- | ------ | ------------------------------------------- |
 | 1   | Variables & Data Types | ✅     | `let`, `const`, primitives, reference types |
 | 2   | Conditionals & Loops   | ✅     | `if`, `for`, `while`, flow control          |
-| 3   | Functions & Scope      | ⏳     | declarations, expressions, closures         |
+| 3   | Functions & Scope      | ✅     | declarations, expressions, closures         |
 | 4   | Arrays & Objects       | ⏳     | CRUD operations, iteration                  |
 | 5   | Array Methods          | ⏳     | `map`, `filter`, `reduce`, chaining         |
 | 6   | Mini Challenges        | ⏳     | Problem solving practice                    |
