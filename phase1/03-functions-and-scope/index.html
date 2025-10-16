@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      //Challenge 1
+      function greetGuest(name) {
+        console.log(`Welcome to Naqsh Resort,`, name, `!`);
+      }
+      greetGuest('Rohan');
+
+      //Challenge 2
+      //   function calculateBill(roomRate, nights) {
+      //     let totalBill = roomRate * nights;
+      //     console.log(`Your Total is:`, totalBill);
+      //   }
+      //   calculateBill(16000, 2);
+
+      //Challenge 3
+      function isEven(num) {
+        num % 2 === 0 ? console.log('even') : console.log('odd');
+      }
+      isEven(10);
+
+      //Challenge 4
+      let resort = 'Naqsh';
+      function outer() {
+        let location = 'Rishikesh';
+        function inner() {
+          let theme = 'Adventure';
+          console.log(resort, location, theme);
+        }
+        inner();
+      }
+      outer();
+
+      //   inner access theme; outer access location & inner both
+
+      //Challenge 5
+      function convertUsdtoInr(usd) {
+        let inr = usd * 83;
+        return inr;
+      }
+      console.log(`${convertUsdtoInr(10)} Rupees`);
+
+      //Challenge 6
+      function bookRoom(name, nights = 1) {
+        if (!nights) return 1;
+        return `${name} booked for ${nights} night's.`;
+      }
+      console.log(bookRoom('Rohan', 4));
+
+      //Challenge 7
+      const calculateBill = (roomRate, nights) => roomRate * nights;
+      console.log(calculateBill(5000, 4));
+
+      //Challenge 8
+      let discount = 10;
+      function applyDiscount() {
+        let discount = 20;
+        console.log('Inside:', discount);
+      }
+      applyDiscount();
+      console.log('Outside:', discount);
+    </script>
+  </body>
+</html>
