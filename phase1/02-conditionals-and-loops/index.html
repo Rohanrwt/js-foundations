@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <script>
+      //Room Cleaning
+      // for (let i = 1; i <= 10; i++) {
+      //   console.log(`Room`, i, `Cleaned.`);
+      // }
+
+      // //Countdown Timer
+      // for (let i = 5; i >= 1; i--) {
+      //   console.log(`Countdown:`, i);
+      // }
+      // console.log(`Blast Off!  🚀`);
+
+      // //Sum of 1 to N
+      // let n = 10;
+      // sum = 0;
+      // for (let i = 1; i <= 10; i++) {
+      //   sum += i;
+      // }
+      // console.log(`Total sum:`, sum);
+
+      //Display even Numbers only
+      // for (let i = 0; i <= 20; i += 2) {
+      //   console.log(i);
+      // }
+
+      //Guest Welcoming System
+      // let guests = ['Rohan', 'Simran', 'Amit', 'Tanya'];
+      // for (let name of guests) {
+      //   if (name.startsWith('A')) {
+      //     continue;
+      //   }
+      //   console.log(`Welcome,`, name);
+      // }
+
+      //Total Bills Calculation
+      // let bills = [1200, 1500, 1800, 900, 2200];
+      // let sum = 0;
+      // for (let number of bills) {
+      //   sum = sum + number;
+      // }
+      // console.log(`Total revenue:`, sum);
+
+      // //Reverse Guest List
+      // let guests = ['Rohan', 'Neha', 'Simran', 'Vikram'];
+      // for (let name of guests.slice().reverse()) {
+      //   console.log(name);
+      // }
+
+      // Clean all 10 Rooms, one by one
+      // For Loop - Best when you know how many times to repeat.
+      // for (let i = 1; i <= 10; i++) {
+      //   console.log(`Cleaning Room:`, i);
+      // }
+
+      // // While LOOP - Best when you don't know how many times to repeat
+      // // Keep booking guests until no rooms left
+
+      // let rooms = 5;
+      // while (rooms > 0) {
+      //   console.log('Room Booked! Remaining:', rooms);
+      //   rooms--;
+      // }
+
+      // For.. of Loop - Best when looping through a list of arrays
+
+      // let guests = ['Rohan', 'Simran', 'Neha'];
+      // for (let name of guests) {
+      //   console.log(`Welcome,`, name);
+      // }
+
+      // for (let guest of ['Ravi', 'Neha', 'Aman']) {
+      //   if (guest === 'Aman') break;
+      //   if (guest.startsWith('N')) continue;
+      //   console.log('Checking:', guest);
+      // }
+
+      // Print 1 -> 10
+      // for (let i = 1; i <= 10; i++) {
+      //   console.log(i);
+      // }
+
+      //Sum numbers 1 -> 10
+      // let sum = 0;
+      // for (let i = 1; i <= 10; i++) {
+      //   sum += i;
+      // }
+      // console.log(sum);
+
+      // let i = 1;
+      // let sum = 0;
+      // while (i <= 10) {
+      //   sum += i;
+      //   i++;
+      // }
+      // console.log(sum);
+
+      //Clean Rooms
+      // let rooms = 10;
+      // while (rooms > 0) {
+      //   console.log(`cleam Room:`, rooms);
+      //   rooms--;
+      // }
+      // console.log('All rooms cleaned!');
+
+      // Search Guest
+      // let guests = ['Aman', 'Rohan', 'Vijay', 'Vivek'];
+      // for (let name of guests) {
+      //   if (name === 'Vivek') break;
+      //   if (name.startsWith('R')) continue;
+      //   console.log(`Welcome,`, name);
+      // }
+
+      let guests = 'aman';
+      for (let i = guests.length - 1; i >= 0; i--) {
+        console.log(guests[i]);
+      }
+    </script>
+  </body>
+</html>
