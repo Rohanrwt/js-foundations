@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini 2</title>
+  </head>
+  <body>
+    <script>
+      const users = [
+        { name: 'Rohan', city: 'Dehradun' },
+        { name: 'Aman', city: 'Delhi' },
+        { name: 'Priya', city: 'Mumbai' },
+      ];
+
+      const names = users.map((user) => `Mr. ${user.name}`);
+      console.log(names);
+
+      const random = [
+        { name: 'Rohan', age: 25 },
+        { name: 'Aman', age: 30 },
+        { name: 'Priya', age: 20 },
+      ];
+
+      //   const age = random.filter((data) => data.age > 25);
+      //   console.log(age);
+      const add = random.reduce((acc, cur) => acc + cur.age, 0);
+      console.log(add);
+    </script>
+  </body>
+</html>

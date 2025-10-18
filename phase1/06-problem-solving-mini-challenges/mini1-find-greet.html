@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Revision</title>
+  </head>
+  <body>
+    <script>
+      const users = [
+        { name: 'Rohan', age: 25 },
+        { name: 'Aman', age: 30 },
+        { name: 'Pankaj', age: 20 },
+      ];
+
+      //map: Extract all names
+      const names = users.map((user) => user.name);
+      console.log(names);
+      const age = users.map((user) => user.age);
+      console.log(age);
+
+      //filter: get user above 21
+      const adults = users.filter((user) => user.age > 21);
+      console.log(adults);
+
+      //reduce: sum of all ages
+      const totalAge = users.reduce((acc, curr) => acc + curr.age, 0);
+      console.log(totalAge);
+    </script>
+  </body>
+</html>

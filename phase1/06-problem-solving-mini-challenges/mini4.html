@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini 4</title>
+  </head>
+  <body>
+    <script>
+      const bookings = [
+        { room: 'Deluxe', price: 4000 },
+        { room: 'Suite', price: 6500 },
+        { room: 'Standard', price: 3000 },
+      ];
+
+      const total = bookings.reduce(
+        (total, booking) => total + booking.price,
+        0
+      );
+      console.log(total);
+    </script>
+  </body>
+</html>

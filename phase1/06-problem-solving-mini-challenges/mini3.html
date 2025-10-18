@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini3</title>
+  </head>
+  <body>
+    <script>
+      const students = [
+        { name: 'Rohan', marks: 80 },
+        { name: 'Aman', marks: 70 },
+        { name: 'Priya', marks: 90 },
+      ];
+
+      const score = students.filter((data) => data.marks > 75);
+      const names = score.map((userName) => userName.name);
+      console.log(names);
+    </script>
+  </body>
+</html>
